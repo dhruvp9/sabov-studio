@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -93,7 +93,7 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 100px;
   }
   header .intro-text .name {
@@ -208,30 +208,35 @@ section.success {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: rgba(0, 0, 0, 0.1);
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
   opacity: 1;
+  background: rgba(24, 188, 156, 0.7);
+}
+#portfolio .portfolio-item .portfolio-link .caption .fa {
+  border: 2px solid #FFF;
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  padding: 18px 0 0 12px;
+  height: 100px;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
-  position: absolute;
-  width: 100%;
-  height: 20px;
   font-size: 20px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
   color: white;
-}
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-  margin-top: -12px;
+  height: 100px;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
@@ -502,4 +507,8 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.profile-avatar {
+  width: 300px;
+  border-radius: 50%;
 }
