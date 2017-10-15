@@ -69,12 +69,23 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
+  position: relative;
   color: white;
+  overflow: hidden;
 }
 header .container {
   padding-top: 100px;
   padding-bottom: 50px;
+}
+header .bg {
+  position: absolute;
+  top: 95px;
+  left: -5px;
+  right: -5px;
+  bottom: 0;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  filter: blur(5px);
 }
 header img {
   display: block;
@@ -82,6 +93,7 @@ header img {
 }
 header .intro-text .name {
   display: block;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -105,7 +117,7 @@ header .intro-text .skills {
 }
 .navbar-custom {
   background: #2C3E50;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Stardos Stencil", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border: none;
@@ -504,4 +516,14 @@ fieldset[disabled] .btn-success.active {
 .profile-avatar {
   width: 300px;
   border-radius: 50%;
+}
+.logo {
+  background: #FFF;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.logo .fa {
+  color: #2C3E50;
+  font-size: 100px;
 }

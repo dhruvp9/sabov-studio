@@ -74,11 +74,23 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background: @theme-success;
+	// background: @theme-success;
+	position: relative;
 	color: white;
+	overflow: hidden;
 	.container {
 		padding-top: 100px;
 		padding-bottom: 50px;
+	}
+	.bg {
+		position: absolute;
+		top: 95px;
+		left: -5px;
+		right: -5px;
+		bottom: 0;
+		background-image: url(../img/bg.jpg);
+		background-size: cover;
+		filter: blur(5px);
 	}
 	img {
 		display: block;
@@ -87,6 +99,7 @@ header {
 	.intro-text {
 		.name {
 			display: block;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
 			font-weight: 700;
@@ -118,7 +131,7 @@ header {
 
 .navbar-custom {
 	background: @theme-primary;
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Stardos Stencil", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	border: none;
@@ -478,4 +491,15 @@ footer {
 .profile-avatar {
 	width: 300px;
 	border-radius: 50%;
+}
+
+.logo {
+	background: #FFF;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	.fa {
+		color: @theme-primary;
+		font-size: 100px;
+	}
 }
